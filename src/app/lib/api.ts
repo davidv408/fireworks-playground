@@ -1,6 +1,6 @@
 export async function queryModel(modelName: string, query: string) {
   try {
-    const res = await fetch("http://localhost:3000/api/models", {
+    const res = await fetch("/api/models", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

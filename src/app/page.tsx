@@ -14,7 +14,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/models")
+    fetch("/api/models")
       .then((res) => res.json())
       .then((data) => {
         setSelectedModel(data[0]);
