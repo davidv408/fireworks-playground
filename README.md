@@ -19,11 +19,11 @@ Upon initialization, the application fetches a list of AI models available for u
 
 Users can type prompts and submit them either by clicking the Submit button to the right of the input field or by pressing the ```Enter``` key.
 
-Submitted prompts and responses from the AI model are streamed in real-time and will be displayed in the ```ChatHistory``` component.
+Submitted prompts and responses from the AI model are streamed in real-time and will be displayed in the [ChatHistory component](https://github.com/davidv408/fireworks-playground/blob/main/src/components/ChatHistory.tsx).
 
-The ```ChatHistory``` component will parse the AI model's response using a custom JavaScript generator function, [located here](https://github.com/davidv408/fireworks-playground/blob/main/src/app/lib/StreamGenerator.ts). The parsed tokens are passed incrementally to the SystemResponseOutput component, providing users with a live, token-by-token view of the model's response.
+The [ChatHistory](https://github.com/davidv408/fireworks-playground/blob/main/src/components/ChatHistory.tsx) component will parse the AI model's response using a [generator function](https://github.com/davidv408/fireworks-playground/blob/main/src/app/lib/StreamGenerator.ts). The parsed tokens are passed incrementally to the SystemResponseOutput component, providing users with a live, token-by-token view of the model's response.
 
-The ```SystemResponseOutput``` component is designed to handle special formatting used in AI responses. For example, if the model includes reasoning enclosed within <think>...</think> tags, this component separates and styles that content accordingly. The reasoning is displayed in a distinct container, while the rest of the response appears beneath it.
+The [SystemResponseOutput](https://github.com/davidv408/fireworks-playground/blob/main/src/components/SystemResponseOutput.tsx) component is designed to handle special formatting used in AI responses. For example, if the model includes reasoning enclosed within <think>...</think> tags, this component separates and styles that content accordingly. The reasoning is displayed in a distinct container, while the rest of the response appears beneath it.
 
 ### Timing Metrics 
 Two performance metrics are displayed directly above the input field:
