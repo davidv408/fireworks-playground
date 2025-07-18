@@ -11,7 +11,7 @@ Live URL: https://fireworks-playground-87he.vercel.app/
 - Run: ```npm run dev```
 
 ## Technical Overview
-<img width="1098" height="658" alt="Screenshot 2025-07-17 at 4 29 40 PM" src="https://github.com/user-attachments/assets/1583f43d-cd8b-4467-801a-6cfca829b49b" />
+<img width="1098" height="658" alt="Screenshot 2025-07-17 at 5 34 40 PM" src="https://github.com/user-attachments/assets/7434fffb-976b-42cd-9b88-87a8b0812003" />
 
 ## Technical Details
 
