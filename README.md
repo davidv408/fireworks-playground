@@ -1,14 +1,14 @@
 ## General Overview
 Select a list of AI models to interact with using [Fireworks AI Chat Completions API](https://docs.fireworks.ai/api-reference/post-chatcompletions)!
 
-Live URL: https://fireworks-playground-87he.vercel.app/
-
 Technologies Used: React, Tailwind, Next.js
 
+Live URL: https://fireworks-playground-87he.vercel.app/
+
 ## Running Locally
-Clone this repository (https://github.com/davidv408/fireworks-playground)
-In the local version, add a .env.local file with the key/value: ```FIREWORKS_API_KEY=<FIREWORKS_API_KEY>```
-Run: ```npm run dev```
+- Clone this repository (https://github.com/davidv408/fireworks-playground)
+- In the local version, add a .env.local file with the key/value: ```FIREWORKS_API_KEY=<FIREWORKS_API_KEY>```
+- Run: ```npm run dev```
 
 ## Technical Overview
 <img width="1098" height="658" alt="Screenshot 2025-07-17 at 4 29 40 PM" src="https://github.com/user-attachments/assets/1583f43d-cd8b-4467-801a-6cfca829b49b" />
