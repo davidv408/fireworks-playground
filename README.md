@@ -21,7 +21,7 @@ Users can type prompts and submit them either by clicking the Submit button to t
 
 Submitted prompts and responses from the AI model are streamed in real-time and will be displayed in the [ChatHistory component](https://github.com/davidv408/fireworks-playground/blob/main/src/components/ChatHistory.tsx).
 
-The [ChatHistory](https://github.com/davidv408/fireworks-playground/blob/main/src/components/ChatHistory.tsx) component will parse the AI model's response using a [generator function](https://github.com/davidv408/fireworks-playground/blob/main/src/app/lib/StreamGenerator.ts). The parsed tokens are passed incrementally to the SystemResponseOutput component, providing users with a live, token-by-token view of the model's response.
+The [ChatHistory component](https://github.com/davidv408/fireworks-playground/blob/main/src/components/ChatHistory.tsx) will parse the AI model's response using a [generator function](https://github.com/davidv408/fireworks-playground/blob/main/src/app/lib/StreamGenerator.ts). The parsed tokens are passed incrementally to the SystemResponseOutput component, providing users with a live, token-by-token view of the model's response.
 
 The [SystemResponseOutput](https://github.com/davidv408/fireworks-playground/blob/main/src/components/SystemResponseOutput.tsx) component is designed to handle special formatting used in AI responses. For example, if the model includes reasoning enclosed within <think>...</think> tags, this component separates and styles that content accordingly. The reasoning is displayed in a distinct container, while the rest of the response appears beneath it.
 
