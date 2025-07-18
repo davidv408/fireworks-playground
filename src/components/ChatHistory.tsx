@@ -143,7 +143,7 @@ export const ChatHistory: FC<ChatHistoryProps> = ({
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
             onKeyDown={(event) => {
-              if (event.key === "Enter") {
+              if (event.key === "Enter" && prompt.trim().length > 0) {
                 event.preventDefault();
                 onSubmit();
               }
@@ -153,8 +153,8 @@ export const ChatHistory: FC<ChatHistoryProps> = ({
           ></textarea>
           <button
             type="button"
-            disabled={prompt.length === 0}
-            className={`absolute right-4 top-4 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-full w-[30px] h-[30px] ${prompt.length === 0 ? "opacity-50 cursor-not-allowed" : ""}`}
+            disabled={prompt.trim().length === 0}
+            className={`absolute right-4 top-4 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-full w-[30px] h-[30px] ${prompt.trim().length === 0 ? "opacity-50 cursor-not-allowed" : ""}`}
             onClick={() => {
               onSubmit();
             }}
